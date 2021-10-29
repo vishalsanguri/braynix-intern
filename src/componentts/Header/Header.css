@@ -1,0 +1,30 @@
+.header{
+    margin: 10px 0px;
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+.header-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.header-list>ul{
+    list-style: none;
+    display: flex;
+    color: #8a949e;
+    flex: 1;
+    justify-content: space-evenly;
+}
+.header-demo-btn{
+    width: 150px;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    background-color: #ba4272;
+    color: white;
+    align-items: center;
+    padding: 15px 15px;
+    border-radius: 40px;
+}
