@@ -1,5 +1,6 @@
 import React from "react";
 import "./Main.css";
+import Mobilemessage from "../Assets/mobileMessage.PNG";
 import Google from "../Assets/Google-Logo.wine.svg";
 import Hp from "../Assets/hewlett-packard-2.svg";
 import Microsoft from "../Assets/Microsoft-Logo.wine.svg";
@@ -16,22 +17,22 @@ export default function Main() {
           <span>
             Start building <br /> with our Apis for <br /> absolutely free.
           </span>
-          <br />
-          <br />
           <div className="input-container">
             <input type="text" placeholder="Enter Email Address" />
             <div className="absolute-button">
               <div className="header-demo-btn">Schedule a Demo</div>
             </div>
           </div>
-          <span style={{ fontSize: "1rem" }}>
-            Have any questions?{" "}
-            <span style={{ textDecoration: "underline" }}>Contact Us</span>{" "}
+          <span className="normal-font">
+            Have any questions?
+            <span style={{ textDecoration: "underline" }}>Contact Us</span>
           </span>
         </div>
-        <div className="mobile-img"></div>
+        <div className="mobile-img">
+          <img src={Mobilemessage} alt="message" className="message-mobile" />
+        </div>
       </div>
-      <div className="main-compart2">
+      {/* <div className="main-compart2">
         <div className="absolute-con1"></div>
         <div className="desc">
           <h1>Who we work with</h1>
@@ -167,7 +168,7 @@ export default function Main() {
             <div className="header-demo-btn">Schedule a Demo</div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

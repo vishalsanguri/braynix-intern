@@ -1,25 +1,42 @@
+:root{
+    --font-size: 2rem;
+    --width: 200px;
+    --height: 60px;
+}
+
+.pay-span{
+    color:#364b60;
+    font-weight: bold;
+    font-size: 5rem;
+}
+.marginLR-40{
+    margin: 0px 80px;
+}
 .header{
-    margin: 10px 0px;
+    font-size: var(--font-size);
+    margin: 10px 100px;
     display: flex;
-    width: 100%;
-    height: 50px;
+    align-items: center;
+    /* border: 1px solid red; */
 }
 .header-list{
-    width: 70%;
+    flex: 1;
     display: flex;
     align-items: center;
     height: 100%;
 }
 .header-list>ul{
+    margin: 0px 50px;
     list-style: none;
     display: flex;
     color: #8a949e;
-    flex: 1;
+    /* flex: 1; */
     justify-content: space-evenly;
 }
 .header-demo-btn{
-    width: 150px;
-    height:50px;
+    width: var(--width);
+    font-size: 1.2rem;
+    height: var(--height);
     display: flex;
     justify-content: center;
     background-color: #ba4272;
@@ -27,4 +44,64 @@
     align-items: center;
     padding: 15px 15px;
     border-radius: 40px;
+}
+@media screen and (max-width:1500px) {
+    :root{
+        --font-size: 1rem;
+        --width: 170px;
+        --height: 40px;
+    }
+    .header-demo-btn{
+        font-size: 1rem;
+    }
+    .marginLR-40{
+        margin: 0px 40px;
+    }
+    .pay-span{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width:900px) {
+    :root{
+        --font-size: .95rem;
+        --width: 150px;
+        --height: 40px;
+    }
+    .pay-span{
+        font-size: 2rem;
+    }
+    .marginLR-40{
+        margin: 0px 15px;
+    }
+    .header-list>ul{
+        margin: 0px 25px;
+    }
+    .header-demo-btn{
+        font-size: .8rem;
+    }
+    .header{
+        margin: 10px 15px;
+    }
+}
+@media screen and (max-width:500px){
+    :root{
+        --font-size: .6rem;
+        --width: 100px;
+        --height: 30px;
+    }
+    .header-list>ul{
+        margin: 0px 10px;
+    }
+    .marginLR-40{
+        margin: 0px 5px;
+    }
+    .pay-span{
+        font-size: 1.1rem;
+    }
+    .header-demo-btn{
+        font-size: .55rem;
+    }
+    .header{
+        margin: 10px 5px;
+    }
 }

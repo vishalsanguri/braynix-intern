@@ -1,30 +1,52 @@
+:root{
+    --headtext:6vw;
+}
+.message-mobile{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto auto;
+    left: 0;
+    width: 39%;
+}
 .main-compart1{
     display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    /* height: 400px; */
+    margin: 100px 100px;
+    font-size: var(--headtext) ;
+}
+.normal-font{
+    margin: 20px 20px;
+    font-size: var(--font-size);
 }
 .text{
-    width: 50%;
-    font-size: 60px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-weight: bold;
     color: #35536b;
 }
 .mobile-img{
     background: url("../Assets/1527145993.svg") no-repeat;
     background-size: contain;
+    position: relative;
+    padding: auto;
     background-position: center;
-    width: 50%;
+    flex: 1;
+    height: 700px;
 }
 input{
-    width: 400px;
+    width: 80%;
+    font-size: var(--font-size);
+    padding-left: 20px;
     border-radius: 40px;
-    border: 1px solid rgb(85, 85, 85);
-    height: 50px;
+    border: 1px solid transparent;
+    height:var(--height);
 }
 .input-container{
-    width: 400px;
+    margin-top: 30px;
+    width: 80%;
     font-size: 1rem;
     font-weight: normal;
     position: relative;
@@ -32,7 +54,7 @@ input{
 .absolute-button{
     position: absolute;
     top: 0%;
-    right: -50px;
+    right: 20%;
 }
 .main-compart2{
 background-color: #1c262f;
@@ -78,4 +100,87 @@ display: flex;
     overflow: hidden;
     color: #35536b;
     column-gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1600px){
+    :root{
+        --headtext:5vw;
+    }
+    .mobile-img{
+        height: 500px;
+    }
+    .message-mobile{
+        width: 52%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .message-mobile{
+        width: 70%;
+    }
+    .mobile-img{
+        height: 450px;
+    }
+}
+@media screen and (max-width:900px){
+    .main-compart1{
+        margin: 10px 15px;
+    }
+    /* .input-container{
+        width: 100%;
+    }
+    input{
+        width: 90%;
+    } */
+    .absolute-button{
+        right: 10%;
+    }
+    .mobile-img{
+        height: 400px;
+    }
+}
+@media screen and (max-width:500px){
+    :root{
+        --headtext:6vw;
+    }
+    .mobile-img{
+        height: 300px;
+    }
+    .main-compart1{
+        margin: 0px 5px;
+    }
+    .absolute-button{
+        right: 0%;
+    }
+    .input-container{
+        width: 98%;
+    }
+    .input-container{
+        width: 98%;
+    }
+    input{
+        width: 100%;
+    }
+    input{
+        padding-left: 2px;
+    }
+    .text{
+        width: 65%;
+    }
 }

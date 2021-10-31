@@ -1,18 +1,31 @@
 *{
   margin: 0;padding: 0;box-sizing: border-box;
 }
+:root{
+  --wid:1100px;
+  --hei:1100px;
+}
 body{
   background-color: #eef3f9;
-  width: 100vw;
   overflow-x: hidden;
 }
 .absolute-con{
   position: absolute;
-  top: -100px;
+  top: -10%;
   z-index: -1;
-  right: -100px;
-  width: 600px;
-  height: 600px;
+  right: -15%;
+  width: var(--wid);
+  height: var(--hei);
   border-radius:50% ;
   background-color: #d2dbe4;
+}
+@media screen and (max-width:1600px){
+  :root{
+    --wid:600px;
+    --hei:600px;
+  }
+  .absolute-con{
+    top: -5%;
+    right: -10%;
+  }
 }
