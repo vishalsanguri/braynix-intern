@@ -1,7 +1,9 @@
 :root{
     --font-size: 2rem;
     --width: 200px;
+    --margin:10px 100px;
     --height: 60px;
+    --buttonfont: 1.2rem;
 }
 
 .pay-span{
@@ -14,7 +16,7 @@
 }
 .header{
     font-size: var(--font-size);
-    margin: 10px 100px;
+    margin: var(--margin);
     display: flex;
     align-items: center;
     /* border: 1px solid red; */
@@ -35,24 +37,21 @@
 }
 .header-demo-btn{
     width: var(--width);
-    font-size: 1.2rem;
+    font-size: var(--buttonfont);
     height: var(--height);
     display: flex;
     justify-content: center;
     background-color: #ba4272;
     color: white;
     align-items: center;
-    padding: 15px 15px;
     border-radius: 40px;
 }
 @media screen and (max-width:1500px) {
     :root{
         --font-size: 1rem;
         --width: 170px;
-        --height: 40px;
-    }
-    .header-demo-btn{
-        font-size: 1rem;
+        --height: 42px;
+        --buttonfont: 1rem;
     }
     .marginLR-40{
         margin: 0px 40px;
@@ -64,8 +63,10 @@
 @media screen and (max-width:900px) {
     :root{
         --font-size: .95rem;
-        --width: 150px;
+        --width: 130px;
         --height: 40px;
+        --margin: 10px 15px;
+        --buttonfont: .8rem;
     }
     .pay-span{
         font-size: 2rem;
@@ -76,18 +77,14 @@
     .header-list>ul{
         margin: 0px 25px;
     }
-    .header-demo-btn{
-        font-size: .8rem;
-    }
-    .header{
-        margin: 10px 15px;
-    }
 }
 @media screen and (max-width:500px){
     :root{
         --font-size: .6rem;
-        --width: 100px;
+        --width: 85px;
         --height: 30px;
+        --margin: 10px 5px;
+        --buttonfont: .5rem;
     }
     .header-list>ul{
         margin: 0px 10px;
@@ -97,11 +94,5 @@
     }
     .pay-span{
         font-size: 1.1rem;
-    }
-    .header-demo-btn{
-        font-size: .55rem;
-    }
-    .header{
-        margin: 10px 5px;
     }
 }

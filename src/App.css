@@ -7,25 +7,49 @@
 }
 body{
   background-color: #eef3f9;
-  overflow-x: hidden;
 }
 .absolute-con{
   position: absolute;
-  top: -10%;
+  top: -15%;
   z-index: -1;
-  right: -15%;
+  right: -10%;
   width: var(--wid);
   height: var(--hei);
   border-radius:50% ;
   background-color: #d2dbe4;
 }
+.App{
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
 @media screen and (max-width:1600px){
   :root{
-    --wid:600px;
-    --hei:600px;
+    --wid:800px;
+    --hei:800px;
   }
   .absolute-con{
-    top: -5%;
+    top: -20%;
+    right: -20%;
+  }
+}
+@media screen and (max-width:900px){
+  :root{
+    --wid:500px;
+    --hei:500px;
+  }
+  .absolute-con{
+    top: -15%;
     right: -10%;
+  }
+}
+@media screen and (max-width:500px){
+  :root{
+    --wid:300px;
+    --hei:300px;
+  }
+  .absolute-con{
+    top: -15%;
+    right: -30%;
   }
 }
