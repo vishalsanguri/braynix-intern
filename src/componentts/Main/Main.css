@@ -36,7 +36,7 @@
     color: #35536b;
 }
 .mobile-img{
-    background: url("../Assets/1527145993.svg") no-repeat;
+    background: url("../Assets/mobile3.PNG") no-repeat;
     background-size: contain;
     position: relative;
     padding: auto;
@@ -123,7 +123,6 @@ display: flex;
 .compant-logo{
     text-align: center;
     height: 80%;
-    /* border: 1px solid red; */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -131,10 +130,11 @@ display: flex;
     flex: 1;
 }
 .newcompart{
+    margin: 100px 100px;
     display: flex;
     justify-content: center;
     font-size: var(--font-size);
-    column-gap: 10px;
+    column-gap: 20px;
 }
 .absolute-con1{
     position: absolute;
@@ -149,7 +149,6 @@ display: flex;
 .main-compart3{
     display: flex;
     position: relative;
-    border: 1px solid red;
     overflow: hidden;
     color: #35536b;
     margin-top: 40px;
@@ -187,6 +186,48 @@ display: flex;
     border-radius:50% ;
     background-color: #d2dbe4;
   }
+.group1{
+    background: url("../Assets/g1.PNG") no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+}
+.group2{
+    background: url("../Assets/g2.PNG") no-repeat;
+    background-size: cover;
+    margin: auto;
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+    background-position: center;
+}
+.group3{
+    background: url("../Assets/g3.PNG") no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -232,6 +273,18 @@ display: flex;
     .alignitem{
         margin: 40px 0px;
     }
+    .group1{
+                  width: 50px;
+                  height: 50px;
+    }
+    .group2{
+                  width: 50px;
+                  height: 50px;
+    }
+    .group3{
+                  width: 50px;
+                  height: 50px;
+    }
 }
 
 @media screen and (max-width:1000px){
@@ -258,6 +311,9 @@ display: flex;
 }
 @media screen and (max-width:900px){
     .main-compart1{
+        margin: 10px 15px;
+    }
+    .newcompart{
         margin: 10px 15px;
     }
     .alignitem{
@@ -319,6 +375,9 @@ display: flex;
     .main-compart1{
         margin: 0px 5px;
     }
+    .newcompart{
+        margin: 0px 5px;
+    }
     .alignitem{
         height: 350px;
         margin: 0px 0px;
@@ -368,4 +427,16 @@ display: flex;
     .image-snipppit{
         width: 100%;
     }
+    .group1{
+        width: 40px;
+        height: 40px;
+}
+.group2{
+        width: 40px;
+        height: 40px;
+}
+.group3{
+        width: 40px;
+        height: 40px;
+}
 }

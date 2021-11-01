@@ -46,9 +46,9 @@
     align-items: center;
     border-radius: 40px;
 }
-@media screen and (max-width:1500px) {
+@media screen and (max-width:1600px) {
     :root{
-        --font-size: 1rem;
+        --font-size: 1.2rem;
         --width: 170px;
         --height: 42px;
         --buttonfont: 1rem;

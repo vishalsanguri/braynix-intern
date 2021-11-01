@@ -6,10 +6,10 @@ function App1() {
   return (
     <>
       <div className="App">
-        {/* <div className="absolute-con"></div> */}
+        <div className="absolute-con"></div>
         <Header />
         <Main />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );

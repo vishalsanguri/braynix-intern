@@ -28,9 +28,7 @@ export default function Main() {
             <span style={{ textDecoration: "underline" }}>Contact Us</span>
           </span>
         </div>
-        <div className="mobile-img">
-          <img src={Mobilemessage} alt="message" className="message-mobile" />
-        </div>
+        <div className="mobile-img"></div>
       </div>
       <div className="main-compart2">
         <div className="absolute-con1"></div>
@@ -85,15 +83,7 @@ export default function Main() {
       </div>
       <div className="main-compart3 newcompart">
         <div style={{ textAlign: "center" }}>
-          <div
-            style={{
-              margin: "auto",
-              width: "50px",
-              height: "50px",
-              borderRadius: "50%",
-              backgroundColor: "blue",
-            }}
-          ></div>
+          <div className="group1"></div>
           <br />
           <h3>Personal Finance</h3>
           <br />
@@ -103,15 +93,7 @@ export default function Main() {
           </span>
         </div>
         <div style={{ textAlign: "center" }}>
-          <div
-            style={{
-              margin: "auto",
-              width: "50px",
-              height: "50px",
-              borderRadius: "50%",
-              backgroundColor: "blue",
-            }}
-          ></div>
+          <div className="group2"></div>
           <br />
           <h3>Banking & Coverage</h3>
           <br />
@@ -121,15 +103,7 @@ export default function Main() {
           </span>
         </div>
         <div style={{ textAlign: "center" }}>
-          <div
-            style={{
-              margin: "auto",
-              width: "50px",
-              height: "50px",
-              borderRadius: "50%",
-              backgroundColor: "blue",
-            }}
-          ></div>
+          <div className="group3"></div>
           <br />
           <h3>Consumer Payments</h3>
           <br />
@@ -139,8 +113,8 @@ export default function Main() {
           </span>
         </div>
       </div>
-      {/* <div className="main-compart3">
-        <div style={{ width: "50%" }}>
+      <div className="newcompart ali">
+        <div style={{ width: "50%", marginTop: "30px" }}>
           <h2>Ready to start?</h2>
         </div>
         <div className="input-container">
@@ -149,7 +123,7 @@ export default function Main() {
             <div className="header-demo-btn">Schedule a Demo</div>
           </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 }

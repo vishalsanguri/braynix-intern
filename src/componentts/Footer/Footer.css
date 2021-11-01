@@ -1,0 +1,54 @@
+.header1{
+    padding: 10px 100px;
+    font-size: var(--font-size);
+    display: flex;
+    background-color: #1C262F;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.facebook-ligo{
+    width: 60px;
+    height: 60px;
+}
+.facebook-ligo1{
+    width: 60px;
+    height: 60px;
+}
+.facebook-ligo2{
+    width: 60px;
+    height: 60px;
+}
+@media screen and (max-width:1600px) {
+    .facebook-ligo{
+        width: 40px;
+        height: 40px;
+    }
+    .facebook-ligo1{
+        width: 40px;
+        height: 40px;
+    }
+    .facebook-ligo2{
+        width: 40px;
+        height: 40px;
+    }
+    .header1{
+        padding: 5px 50px;
+    }
+}
+@media screen and (max-width:600px) {
+    .facebook-ligo{
+        width: 20px;
+        height: 20px;
+    }
+    .facebook-ligo1{
+        width: 20px;
+        height: 20px;
+    }
+    .facebook-ligo2{
+        width: 20px;
+        height: 20px;
+    }
+    .header1{
+        padding: 5px 10px;
+    }
+}
