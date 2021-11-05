@@ -5,8 +5,8 @@ import Footer from "./componentts/Footer/Footer";
 function App() {
   return (
     <>
-      <div className="absolute-con"></div>
       <div className="App">
+        <div className="absolute-con"></div>
         <Header />
         <Main />
         <Footer />
